@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bgc{
+            background-color: 	#FDF5E6;
+        }
+    </style>
+</head>
+<body class="bgc">
+    <div class="container login-form">
+        <div class="row">
+            <div class="col-6 mx-auto mt-5">
+                <div class="shadow p-5 rounded-3 bg-white">
+                    <form action="dashboard.html" class="needs-validation" novalidate>
+                        <h3 class="text-center mb-3">後臺管理系統登入</h3>
+                        <!-- 帳號 -->
+                        <div class="mb-3">
+                            <label for="account" class="form-label"><i class="bi bi-person-fill"></i>帳號</label>
+                            <input type="text" id="account" name="account" placeholder="請輸入帳號" class="form-control bg-light" required>
+                            <div class="invalid-feedback">
+                                請輸入正確帳號
+                              </div>
+                        </div>
+                        <!-- 密碼 -->
+                        <div class="mb-4">
+                            <label for="password" class="form-label"><i class="bi bi-lock-fill"></i>密碼</label>
+                            <input type="password" id="password" name="password" placeholder="請輸入密碼" class="form-control bg-light" required>
+                            <div class="invalid-feedback">
+                                請輸入正確密碼
+                              </div>
+                        </div>
+                        <!-- 記住我 -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">記住我</label>
+                            </label>
+                          </div>
+                        <!-- 送出 -->
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-dark text-light" value="登入">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="../../js/validate.js"></script>
+</body>
+</html>
