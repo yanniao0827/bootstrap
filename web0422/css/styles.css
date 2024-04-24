@@ -10145,4 +10145,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.youtube {
+  color: #FF0000;
+}
+
+.heart {
+  color: #FF0000;
 }/*# sourceMappingURL=styles.css.map */
