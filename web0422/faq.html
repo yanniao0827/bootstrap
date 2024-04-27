@@ -21,52 +21,58 @@
         .star{
             color:orange;
         }
+        .bgc2{
+            background-color: #A8D8B9;
+        }
     </style>
 </head>
-
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
+  <nav class="navbar-expand-lg navbar navbar-light fixed-top bgc2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">4NIJI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">認識我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">門市資訊</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="faq.html">常見問題</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="contact.html">聯絡我們</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              商品
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="product1.html">實體商品</a></li>
+              <li><a class="dropdown-item" href="#">音聲</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="d-flex">
+            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill h3 text-dark"></i></a>
+            <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="position-relative">
+                <i class="bi bi-cart4 h3 text-dark"></i>
+                <span class="position-absolute start-100 top-0 bg-dark badge rounded-pill translate-middle">5</span>
+            </a>
 
-
-<nav class="navbar-expand-lg navbar navbar-light fixed-top" style="background-color: #e3f2fd";>
-  <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html">4NIJI</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">首頁</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">認識Livers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="faq.html">常見問題</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            商品
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="product1.html">實體商品</a></li>
-            <li><a class="dropdown-item" href="product2.html">音聲</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="d-flex">
-          <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill h3 text-dark"></i></a>
-          <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="position-relative">
-              <i class="bi bi-cart4 h3 text-dark"></i>
-              <span class="position-absolute start-100 top-0 bg-dark badge rounded-pill translate-middle">5</span>
-          </a>
-
-      
+        
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <!-- 麵包屑 -->
 <nav aria-label="breadcrumb" class="mt-5 pt-4 px-5 py-3">
   <ol class="breadcrumb">
@@ -78,16 +84,8 @@
 <!-- 手風琴 -->
 <div class="container">
     <div class="row">
-        <h2 class="text-center mb-4">FAQ & 連絡我們</h2>
+        <h2 class="text-center mb-4">FAQ</h2>
         <!-- tab開始 -->
-        <ul class="nav nav-pills justify-content-center rounded-pill my-4" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active me-5" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">FAQ</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-            </li>
-          </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="accordion" id="accordionExample">
@@ -99,23 +97,34 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                     <div class="accordion-body">
-                      請不用擔心期間限定周邊或音聲錯過購買期限！大部分商品在未來會進行再販，未來也將規劃4NIJI實體門市讓各位購買！
+                      請不用擔心期間限定周邊或音聲錯過購買期限！大部分商品在未來都有可能會進行再販，也可以到4NIJI實體門市購買餘量現貨！
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Accordion Item #2
+                      AR Live購票後突然無法觀看直播回放了，為什麼？
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      AR Live為期間限定舞台，線上票購買期限從2024/03/29~2024/04/29，直播回放從2024/04/14 Ar Live直播結束後開始一直到2024/04/30 23:59為止都可以觀看，超過該期限直播回放網頁將會關閉，請粉絲們把握時間在期限享受Liver們帶來的舞台！如碰到其他技術問題導致無法觀看回放，請在常見問題＞Contact裡填寫表單回報，工作人員將盡快為您處理！
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      購買的周邊有瑕疵，可以退貨嗎？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      如果遇到商品瑕疵，可以與客服人員聯繫後將商品退回4NIJI工作室，為避免爭議，請全程錄影開箱過程。
+                    </div>
+                  </div>
+                </div>
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><form class="row g-3">
               <div class="col-md-12">

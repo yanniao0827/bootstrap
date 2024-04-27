@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>White Day Voice</title>
+    <title>門市資訊</title>
     <!-- css的cdn -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -21,6 +21,9 @@
         .star{
             color:orange;
         }
+        .style-none{
+            list-style: none;
+        }
         .bgc2{
             background-color: #A8D8B9;
         }
@@ -28,100 +31,75 @@
 </head>
 <body class="d-flex flex-column h-100">
 <main class="flex-shrink-0">
-  <nav class="navbar-expand-lg navbar navbar-light fixed-top bgc2">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">4NIJI</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">首頁</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">認識我們</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="store.html">門市資訊</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="faq.html">常見問題</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="contact.html">聯絡我們</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              商品
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="product1.html">實體商品</a></li>
-              <li><a class="dropdown-item" href="#">音聲</a></li>
+    <nav class="navbar-expand-lg navbar navbar-light fixed-top bgc2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">4NIJI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">認識我們</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="store.html">門市資訊</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="faq.html">常見問題</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">聯絡我們</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  商品
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="product1.html">實體商品</a></li>
+                  <li><a class="dropdown-item" href="#">音聲</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-        <div class="d-flex">
-            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill h3 text-dark"></i></a>
-            <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="position-relative">
-                <i class="bi bi-cart4 h3 text-dark"></i>
-                <span class="position-absolute start-100 top-0 bg-dark badge rounded-pill translate-middle">5</span>
-            </a>
-
-        
+            <div class="d-flex">
+                <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-person-fill h3 text-dark"></i></a>
+                <a href="javascript:;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" class="position-relative">
+                    <i class="bi bi-cart4 h3 text-dark"></i>
+                    <span class="position-absolute start-100 top-0 bg-dark badge rounded-pill translate-middle">5</span>
+                </a>
+    
+            
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-<!-- 麵包屑 -->
+      </nav>
+      <!-- 麵包屑 -->
       <nav aria-label="breadcrumb" class="mt-5 pt-4 px-5 py-3">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none">首頁</a></li>
-          <li class="breadcrumb-item active" aria-current="page">商品</li>
-          <li class="breadcrumb-item active" aria-current="page"><a href="product2.html" class="text-decoration-none text-secondary">音聲</a></li>
-          <li class="breadcrumb-item active" aria-current="page">White Day Voice</li>
+          <li class="breadcrumb-item active" aria-current="page">門市資訊</li>
         </ol>
       </nav>
-      <div class="container">
+      <div class="container mt-5">
         <div class="row">
-            <!-- 側邊欄 -->
-            <div class="col-md-3">
-                <div>
-                    <img src="../imgs/WhiteDay.webp" class="w-100" alt="">
-                </div>
-            </div>
-            <!-- 右邊內容欄 -->
-            <div class="col-md-9">
-                    <div class="row">
-                        <ul class="ms-3">
-                            <li class="my-4">跟著喜歡的主播一起度過一個浪漫的白色情人節吧！</li>
-                            <li class="my-4">購買音聲將附贈電腦、手機壁紙。</li>
-                            <li class="my-4">音聲所附贈手機、電腦壁紙請勿轉載，如有相關行為將會追究法律責任。</li>
-                        </ul>
-                        <div class="mb-4">售價：NT 200</div>
-                        <div class="col-5">
-                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                <option selected disabled>請選擇Liver</option>
-                                <option value="1">Vox Akuma</option>
-                                <option value="2">Ike Eveland</option>
-                                <option value="3">Luca Kaneshiro</option>
-                                <option value="4">Shu Yamino</option>
-                              </select>
-                        </div>
-                        <div class="col-7">
-                            <button type="button" class="btn btn-secondary me-4 ms-5">直接購買</button>
-                            <button type="button" class="btn btn-secondary me-4">加入購物車</button>
-                            <button type="button" class="btn btn-secondary me-3">進入收藏</button>
-                        </div>
-                    </div>
+            <div class="col-6"><img src="../imgs/studio.jpg" class="w-100" alt=""></div>
+            <div class="col-6 position-relative">
+                <ul class="ms-3 position-absolute top-50 start-0 translate-middle-y text-decoration-none">
+                <li class="fs-4 mb-2 style-none"><i class="bi bi-house-fill me-3"></i>地址：台北市信義計畫區</li>
+                <li class="fs-4 mb-2 style-none"><i class="bi bi-envelope-at-fill me-3"></i>信箱：4niji@mail.com</li>
+                <li class="fs-4 mb-2 style-none"><i class="bi bi-telephone-fill me-3"></i>連絡電話：(02)2222-3333</li>
+                <li class="fs-4 mb-2 style-none"><i class="bi bi-clock-fill me-3"></i>營業時間：週一至週五 08:30~16:30</li>
+                </ul>
             </div>
         </div>
     </div>
         
-
 </main>
-<footer class="bcg-gray mt-auto p-3">此檔案僅供資展練習使用，不作為其他商業用途</footer>
 
+<footer class="bcg-gray mt-auto p-3">此檔案僅供資展練習使用，不作為其他商業用途</footer>
 <!-- 互動視窗 -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -196,7 +174,6 @@
 </div>
 </div>
 <!-- offcanvas 結束 -->
-
 
     <!-- JS的cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
